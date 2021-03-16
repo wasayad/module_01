@@ -3,7 +3,7 @@
 
 int main(void)
 {
-   ZombieHorde* test = new ZombieHorde(2);
+   ZombieHorde* test = new ZombieHorde(10);
    test->announce();
    delete test;
 }

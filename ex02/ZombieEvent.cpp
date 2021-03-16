@@ -4,7 +4,7 @@
 #include <time.h>
 #include "ZombieEvent.hpp"
 
-ZombieEvent::ZombieEvent(std::string ntype): setZombieType(ntype)
+ZombieEvent::ZombieEvent(std::string ntype): ZombieType(ntype)
 {
 
 }
@@ -16,7 +16,7 @@ ZombieEvent::~ZombieEvent()
 
 Zombie* ZombieEvent::newZombie(std::string name)
 {
-    Zombie* test = new Zombie(setZombieType, name);
+    Zombie* test = new Zombie(ZombieType, name);
     return (test);
 }
 
@@ -28,11 +28,11 @@ Zombie* ZombieEvent::randomChump(void)
     srand (time(NULL));
     iSecret = rand() % 10;
     name = str[iSecret];
-    Zombie* test = new Zombie(setZombieType, name);
+    Zombie* test = new Zombie(ZombieType, name);
     return (test);
 }
 
-void    ZombieEvent::setType(std::string type)
+void    ZombieEvent::setZombieType(std::string type)
 {
-    setZombieType = type;
+    ZombieType = type;
 }

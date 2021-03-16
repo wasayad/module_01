@@ -5,7 +5,7 @@
 
 Zombie::Zombie(std::string ntype, std::string nname): type(ntype), name(nname)
 {
-
+    std::cout<<"Zombie "<<nname<<" of type "<< ntype <<" has spawned\n";
 }
 
 Zombie::~Zombie()

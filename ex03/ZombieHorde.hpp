@@ -11,12 +11,12 @@ class   ZombieHorde
     public:
         ZombieHorde(int horde_size);
         ~ZombieHorde();
-        Zombie* randomChump(int iSecret);
+        Zombie  randomChump(int iSecret);
         void    setType(std::string type);
         void    announce();
     private:
         int          horde_size;
-        Zombie       **Horde;
+        Zombie*       Horde;
 };
 
 #endif

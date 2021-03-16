@@ -8,6 +8,7 @@
 class Zombie
 {
     public:
+        Zombie();
         Zombie(std::string type, std::string name);
         ~Zombie();
         void    advert();
